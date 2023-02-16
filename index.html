@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://kit.fontawesome.com/830c36313f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="text-cyan-400 text-center py-6 text-5xl font-semibold">Money Master</h2>
+    <section class="flex justify-evenly">
+        <div>
+            <img src="./calculation.png" alt="">
+        </div>
+        <div class="flex justify-center bg-slate-200 py-2 px-6 rounded-md">
+           <div>
+            <h2 class="text-2xl font-medium text-center">Income</h2>
+            <label for="">Income: <input id="income" class="rounded" type="text"></label>
+            <h2 class="text-2xl font-medium text-center my-2">Expenses</h2>
+            <label for="">Food: <input id="food" class="rounded"  type="text"></label><br>
+            <label for="">Rent: <input id="rent" class="rounded my-2" type="text"></label><br>
+            <label class="block" for="">Clothes: <input id="clothes" class="rounded" type="text"></label>
+            <button id="calculate-btn" class="bg-cyan-400 text-white rounded-md px-3 py-2 mt-3 mx-auto">Calculate</button>
+            <h2 class="text-2xl font-medium text-center my-2">Total Expenses <span id="total-expenses">00</span></h2>
+            <h2 class="text-2xl font-medium text-center my-2">Balance <span id="balance">00</span></h2>
+            <label for="">Save: <input id="save-input" type="text"></label> <span>%</span> 
+            <button id="save" class="bg-cyan-400 text-white rounded-md px-3 py-2 mt-3 mx-auto">Save</button>
+            <h2 class="text-2xl font-medium text-center my-2">Saving Amount: <span id="save-amount">00</span></h2>
+            <h2 class="text-2xl font-medium text-center my-2">Remaining Balance: <span id="remaining-balance">00</span></h2>
+           </div>
+        </div>
+        <script src="js/utility.js"></script>
+        <script src="js/calculate.js"></script>
+    </section>
+</body>
+</html>
